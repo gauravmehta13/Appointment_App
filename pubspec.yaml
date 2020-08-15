@@ -21,6 +21,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/chikitsuck.png
     - assets/img1.png
     - assets/img2.png
     - assets/img3.png

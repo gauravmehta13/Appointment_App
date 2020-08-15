@@ -35,7 +35,18 @@ class _HomepageState extends State<Homepage> {
         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
         child: Column(
           children: <Widget>[
-            Align(
+            Container(
+              height: 50,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/chikitsuck.png'),
+                  fit: BoxFit.fitWidth,
+                ),
+                shape: BoxShape.rectangle,
+              ),
+            )
+            /* Align(
               alignment: Alignment.topLeft,
               child: Text(
                 'Near By \nHospitals',
@@ -44,7 +55,8 @@ class _HomepageState extends State<Homepage> {
                     fontSize: 30,
                     fontWeight: FontWeight.w600),
               ),
-            ),
+            ),*/
+            ,
             SizedBox(
               height: 30,
             ),
