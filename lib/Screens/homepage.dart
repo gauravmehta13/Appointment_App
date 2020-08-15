@@ -16,25 +16,40 @@ class _HomepageState extends State<Homepage> {
             SizedBox(
               height: 50,
             ),
-            Text(
-              'Near By \nHospitals',
-              style: TextStyle(
-                  color: Colors.black87,
-                  fontSize: 30,
-                  fontWeight: FontWeight.w600),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                'Near By \nHospitals',
+                style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 30,
+                    fontWeight: FontWeight.w600),
+              ),
             ),
             SizedBox(
-              height: 20,
+              height: 30,
             ),
             TextField(
+                //scrollPadding: EdgeInsets.symmetric(vertical: 10),
                 decoration: InputDecoration(
-              prefixIcon: Icon(Icons.search),
-              border: new OutlineInputBorder(
-                borderRadius: const BorderRadius.all(
-                  const Radius.circular(50.0),
-                ),
+                    fillColor: Color(0xffF6F5F4),
+                    filled: true,
+                    prefixIcon: Icon(Icons.search),
+                    border: InputBorder.none,
+                    hintText: 'Search Doctors , Clinic...')),
+            SizedBox(
+              height: 30,
+            ),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                'Specialities',
+                style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600),
               ),
-            ))
+            ),
           ],
         ),
       ),
