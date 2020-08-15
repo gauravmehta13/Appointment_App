@@ -16,15 +16,11 @@ class Hospitals extends StatelessWidget {
             Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20))),
-              elevation: 10,
+              elevation: 5,
               child: Container(
-                height: 200,
+                height: 190,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  //image: DecorationImage(
-                  //  fit: BoxFit.cover,
-                  //image: NetworkImage(movieList[index].imageUrl),
-                  // ),
                 ),
               ),
             ),

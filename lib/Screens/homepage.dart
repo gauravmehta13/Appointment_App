@@ -94,7 +94,7 @@ class _HomepageState extends State<Homepage> {
               ],
             ),
             Container(
-              height: 280,
+              height: 210,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 5,
@@ -123,6 +123,9 @@ class _HomepageState extends State<Homepage> {
                   },
                 ),
               ],
+            ),
+            SizedBox(
+              height: 10,
             ),
             Container(
               height: 200,
