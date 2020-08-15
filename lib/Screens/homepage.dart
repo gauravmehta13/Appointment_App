@@ -1,4 +1,5 @@
 import 'package:Appointment_App/data/data.dart';
+import 'package:Appointment_App/model/LookingFor.dart';
 import 'package:Appointment_App/model/hospitals.dart';
 import 'package:Appointment_App/model/specialities.dart';
 import 'package:flutter/material.dart';
@@ -142,6 +143,31 @@ class _HomepageState extends State<Homepage> {
                       backColor: specialities[index].backgroundColor,
                     );
                   }),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                'What Are You Looking For',
+                style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 500,
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: ListView.builder(
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: 3,
+                itemBuilder: (ctx, i) => LookingFor(i),
+              ),
             ),
           ],
         ),
