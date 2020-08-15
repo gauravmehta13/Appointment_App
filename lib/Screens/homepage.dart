@@ -1,4 +1,5 @@
 import 'package:Appointment_App/data/data.dart';
+import 'package:Appointment_App/model/hospitals.dart';
 import 'package:Appointment_App/model/specialities.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -80,8 +81,13 @@ class _HomepageState extends State<Homepage> {
                 ),
               ],
             ),
-            SizedBox(
-              height: 20,
+            Container(
+              height: 280,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 5,
+                itemBuilder: (ctx, i) => Hospitals(i),
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

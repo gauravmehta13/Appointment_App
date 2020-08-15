@@ -49,7 +49,7 @@ class SpecialistTile extends StatelessWidget {
           Image.asset(
             imgAssetPath,
             height: 117,
-            fit: BoxFit.fitHeight,
+            fit: BoxFit.fitWidth,
           )
         ],
       ),
