@@ -33,7 +33,7 @@ class _HomepageState extends State<Homepage> {
       drawer: Drawer(child: Container() // Populate the Drawer in the next step.
           ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+        padding: EdgeInsets.fromLTRB(20, 10, 0, 10),
         child: Column(
           children: <Widget>[
             Container(
