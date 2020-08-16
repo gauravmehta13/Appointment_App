@@ -24,14 +24,6 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0.0,
-        brightness: Brightness.light,
-        iconTheme: IconThemeData(color: Colors.black87),
-      ),
-      drawer: Drawer(child: Container() // Populate the Drawer in the next step.
-          ),
       body: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(20, 10, 0, 10),
         child: Column(
@@ -59,7 +51,7 @@ class _HomepageState extends State<Homepage> {
             ),*/
             ,
             SizedBox(
-              height: 30,
+              height: 20,
             ),
             TextField(
                 decoration: InputDecoration(
@@ -69,38 +61,7 @@ class _HomepageState extends State<Homepage> {
                     border: InputBorder.none,
                     hintText: 'Search Doctors , Clinic...')),
             SizedBox(
-              height: 20,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  'Hospitals',
-                  style: TextStyle(
-                      color: Colors.black87,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600),
-                ),
-                FlatButton(
-                  child: Text('View All'),
-                  onPressed: () {
-                    Fluttertoast.showToast(
-                      msg: "Coming Soon",
-                      backgroundColor: Colors.blue,
-                      toastLength: Toast.LENGTH_SHORT,
-                      gravity: ToastGravity.CENTER,
-                    );
-                  },
-                ),
-              ],
-            ),
-            Container(
-              height: 210,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 5,
-                itemBuilder: (ctx, i) => Hospitals(i),
-              ),
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -146,6 +107,40 @@ class _HomepageState extends State<Homepage> {
             ),
             SizedBox(
               height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  'Hospitals',
+                  style: TextStyle(
+                      color: Colors.black87,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600),
+                ),
+                FlatButton(
+                  child: Text('View All'),
+                  onPressed: () {
+                    Fluttertoast.showToast(
+                      msg: "Coming Soon",
+                      backgroundColor: Colors.blue,
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.CENTER,
+                    );
+                  },
+                ),
+              ],
+            ),
+            Container(
+              height: 210,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 5,
+                itemBuilder: (ctx, i) => Hospitals(i),
+              ),
+            ),
+            SizedBox(
+              height: 10,
             ),
             Align(
               alignment: Alignment.topLeft,

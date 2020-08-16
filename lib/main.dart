@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
         SystemUiOverlayStyle(statusBarColor: Colors.transparent));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Appointment App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      title: 'ChikitSuck',
+      theme: ThemeData(primarySwatch: Colors.red),
       home: MyBottomNavigationBar(),
     );
   }
@@ -46,9 +46,45 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0.0,
+          brightness: Brightness.light,
+          iconTheme: IconThemeData(color: Colors.black87),
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              UserAccountsDrawerHeader(
+                accountName: Text("Team Nerv"),
+                accountEmail: Text("Mayank , Priya , Gaurav"),
+                currentAccountPicture: CircleAvatar(
+                  backgroundColor:
+                      Theme.of(context).platform == TargetPlatform.iOS
+                          ? Colors.blue
+                          : Colors.white,
+                  child: Text(
+                    "N",
+                    style: TextStyle(fontSize: 40.0),
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text("Item 1"),
+                trailing: Icon(Icons.arrow_forward),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text("Item 2"),
+                trailing: Icon(Icons.arrow_forward),
+                onTap: () {},
+              ),
+            ],
+          ),
+        ),
         body: _children[_currentindex],
         bottomNavigationBar: CurvedNavigationBar(
-          color: Colors.red,
+          color: Colors.deepOrangeAccent,
           backgroundColor: Colors.white,
           height: 50,
           items: <Widget>[

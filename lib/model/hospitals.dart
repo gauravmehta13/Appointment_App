@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Hospitals extends StatelessWidget {
@@ -14,9 +15,10 @@ class Hospitals extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Card(
+              color: CupertinoColors.systemGrey4,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20))),
-              elevation: 5,
+              elevation: 0,
               child: Container(
                 height: 190,
                 decoration: BoxDecoration(

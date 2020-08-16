@@ -11,7 +11,7 @@ class LookingFor extends StatelessWidget {
         GestureDetector(
           onTap: () {},
           child: Card(
-            elevation: 5,
+            elevation: 1,
             child: Row(
               children: <Widget>[
                 Container(
@@ -32,7 +32,7 @@ class LookingFor extends StatelessWidget {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                      borderRadius: BorderRadius.all(Radius.circular(20))),
                   padding: const EdgeInsets.all(10),
                   height: 150,
                   child: Column(
