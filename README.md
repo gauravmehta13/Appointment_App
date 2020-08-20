@@ -11,10 +11,10 @@
  
 <h2>Features</h2>
  
-**Doctor profiles** — Patients should be able to browse doctor profiles to choose the doctor they like. Profiles should contain information on certifications, experience, competencies, and languages spoken. It will be useful if you include ratings and feedback from previous and current patients so users can know whether a doctor met the expectations of past patients in terms of communication, treatment, competence, etc. <br />
-**Search for a doctor** — Let patients search for healthcare providers by specialty, ratings, experience, and location.<br />
-**Book and manage appointments** — Patients should be able to schedule an appointment with a doctor using a calendar. Also, make sure users can cancel and reschedule appointments.<br />
-**Reminders** — Push notifications work well for automating regular interactions between patients and clinics, such as reminding patients about appointments. You may consider notifying patients a few times so they don’t forget about an upcoming appointment, but be careful not to overdo it.<br />
+* **Doctor profiles** — Patients should be able to browse doctor profiles to choose the doctor they like. Profiles should contain information on certifications, experience, competencies, and languages spoken. It will be useful if you include ratings and feedback from previous and current patients so users can know whether a doctor met the expectations of past patients in terms of communication, treatment, competence, etc. <br />
+* **Search for a doctor** — Let patients search for healthcare providers by specialty, ratings, experience, and location.<br />
+* **Book and manage appointments** — Patients should be able to schedule an appointment with a doctor using a calendar. Also, make sure users can cancel and reschedule appointments.<br />
+* **Reminders** — Push notifications work well for automating regular interactions between patients and clinics, such as reminding patients about appointments. You may consider notifying patients a few times so they don’t forget about an upcoming appointment, but be careful not to overdo it.<br />
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
