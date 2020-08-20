@@ -8,7 +8,7 @@
 </p>
  
  <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" img width="5000" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" img width="5000" height="2" />
 </p>
 
 > Our idea is to create mainly an appointment application for patients who can easily get an appointment to nearby hospital or doctor.
