@@ -4,7 +4,7 @@
 <h1 align="center">Appointment App</h1>
 <p align="center">
   <b>Easy Doctor Booking now at your Fingertips</b></br>
-  <sub>Find the right doctor for you & your loved ones<sub>
+  <sub>Why do medical centers automate appointment scheduling? The reasons are numerous. Developing a doctor appointment app is a win-win solution for clinics and patients.<sub>
 </p>
  
  [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
