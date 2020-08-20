@@ -31,7 +31,7 @@
 </p>
 
 
-**With an appointment scheduling app, clinics are able to:**
+<h3>With an appointment scheduling app, clinics are able to:</h3>
 * Improve their efficiency and streamline processes
 * Better manage staff scheduling
 * Predict and reduce appointment no-shows
@@ -39,7 +39,7 @@
 * Avoid overbooking
 * Eliminate human errors (for example, misspelling a name or mistyping an appointment time)
 * Get insights into their performance (number of completed appointments and no-shows, full appointment history by patient) and compare their productivity
-**Patients are able to:**
+<h3>Patients are able to:</h3>
 * Access healthcare 24/7
 * Schedule and reschedule appointments any time from anywhere
 * Communicate with their care team in real time
