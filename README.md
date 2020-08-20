@@ -7,7 +7,15 @@
   <sub>Why do medical centers automate appointment scheduling? The reasons are numerous. Developing a doctor appointment app is a win-win solution for clinics and patients.<sub>
 </p>
  
- [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" />
+</p>
+
+> Our idea is to create mainly an appointment application for patients who can easily get an appointment to nearby hospital or doctor.
+> Not only this we will provide a mini assistant like a doctor suppose a person is suffering from some kind of illness and he/she don't know about the drug or salt to take so > our app will provide the particular salt or medicine to take. 
+> What we more thought about this app that it will keep the track of history of appointments and payments etc...
+> For knowledge perspective the users of our app we will be notifying the person with health related tips, life saving techniques, first aid etc ....
+
  <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" />
 </p>
@@ -18,12 +26,11 @@
 * **Book and manage appointments** — Patients should be able to schedule an appointment with a doctor using a calendar. Also, make sure users can cancel and reschedule appointments.<br />
 * **Reminders** — Push notifications work well for automating regular interactions between patients and clinics, such as reminding patients about appointments. You may consider notifying patients a few times so they don’t forget about an upcoming appointment, but be careful not to overdo it.<br />
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" />
+</p>
 
-Our idea is to create mainly an appointment application for patients who can easily get an appointment to nearby hospital or doctor.
-Not only this we will provide a mini assistant like a doctor suppose a person is suffering from some kind of illness and he/she don't know about the drug or salt to take so our app will provide the particular salt or medicine to take. 
-What we more thought about this app that it will keep the track of history of appointments and payments etc...
-For knowledge perspective the users of our app we will be notifying the person with health related tips, life saving techniques, first aid etc ....
+
 
 Why do medical centers automate appointment scheduling? The reasons are numerous. Developing a doctor appointment app is a win-win solution for clinics and patients.
 With an appointment scheduling app, clinics are able to:
