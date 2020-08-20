@@ -1,16 +1,6 @@
 # Appointment_App
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Our idea is to create mainly an appointment application for patients who can easily get an appointment to nearby hospital or doctor.
+Not only this we will provide a mini assistant like a doctor suppose a person is suffering from some kind of illness and he/she don't know about the drug or salt to take so our app will provide the particular salt or medicine to take. 
+What we more thought about this app that it will keep the track of history of appointments and payments etc...
+For knowledge perspective the users of our app we will be notifying the person with health related tips, life saving techniques, first aid etc ....
