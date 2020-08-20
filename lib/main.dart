@@ -1,7 +1,7 @@
+import 'package:Appointment_App/Screens/user_profile.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 import 'Screens/clinics.dart';
 import 'Screens/doctors.dart';
 import 'Screens/homepage.dart';
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ChikitSuck',
-      theme: ThemeData(primarySwatch: Colors.red),
+      //theme: ThemeData(primarySwatch: Colors.blue),
       home: MyBottomNavigationBar(),
     );
   }
@@ -53,21 +53,39 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
           iconTheme: IconThemeData(color: Colors.black87),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: <Widget>[
-              UserAccountsDrawerHeader(
-                accountName: Text("Team Nerv"),
-                accountEmail: Text("Mayank , Priya , Gaurav"),
-                currentAccountPicture: CircleAvatar(
-                  backgroundColor:
-                      Theme.of(context).platform == TargetPlatform.iOS
-                          ? Colors.blue
-                          : Colors.white,
-                  child: Text(
-                    "N",
-                    style: TextStyle(fontSize: 40.0),
-                  ),
+              FlatButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => UserProfile(),
+                  ));
+                },
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  margin: EdgeInsets.only(top: 30, bottom: 10),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          image: NetworkImage(
+                              'https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg'),
+                          fit: BoxFit.fill)),
                 ),
+              ),
+              Text(
+                'Team Nerv',
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 22,
+                    color: Colors.deepOrangeAccent),
+              ),
+              Text(
+                'Mayank , Priya , Gaurav',
+                style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 15,
+                    color: Colors.deepOrangeAccent),
               ),
               ListTile(
                 title: Text("Item 1"),
@@ -75,7 +93,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
                 onTap: () {},
               ),
               ListTile(
-                title: Text("Item 2"),
+                title: Text("Item 2]"),
                 trailing: Icon(Icons.arrow_forward),
                 onTap: () {},
               ),
