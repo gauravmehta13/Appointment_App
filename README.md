@@ -4,7 +4,7 @@
 <h1 align="center">Appointment App</h1>
 <p align="center">
   <b>Easy Doctor Booking now at your Fingertips</b></br>
-  <sub>Organize your tasks, lists and reminders in one easy to use app.<sub>
+  <sub>Find the right doctor for you & your loved ones<sub>
 </p>
  
  [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
