@@ -17,7 +17,7 @@
 > For knowledge perspective the users of our app we will be notifying the person with health related tips, life saving techniques, first aid etc ....
 
  <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" img width="5000" height="5" />
 </p>
 <h2>Features</h2>
  
@@ -27,7 +27,7 @@
 * **Reminders** — Push notifications work well for automating regular interactions between patients and clinics, such as reminding patients about appointments. You may consider notifying patients a few times so they don’t forget about an upcoming appointment, but be careful not to overdo it.<br />
 
  <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" img width="5000" height="5" />
 </p>
 
 
@@ -47,3 +47,7 @@
 * Schedule and reschedule appointments any time from anywhere
 * Communicate with their care team in real time
 * Access and pay bills (if payment functionality is offered)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" img width="5000" height="5" />
+</p>
