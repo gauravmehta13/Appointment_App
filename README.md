@@ -31,18 +31,16 @@
 </p>
 
 
-
-Why do medical centers automate appointment scheduling? The reasons are numerous. Developing a doctor appointment app is a win-win solution for clinics and patients.
-With an appointment scheduling app, clinics are able to:
-Improve their efficiency and streamline processes
-Better manage staff scheduling
-Predict and reduce appointment no-shows
-Save time on administrative tasks
-Avoid overbooking
-Eliminate human errors (for example, misspelling a name or mistyping an appointment time)
-Get insights into their performance (number of completed appointments and no-shows, full appointment history by patient) and compare their productivity
-Patients are able to:
-Access healthcare 24/7
-Schedule and reschedule appointments any time from anywhere
-Communicate with their care team in real time
-Access and pay bills (if payment functionality is offered)
+**With an appointment scheduling app, clinics are able to:**
+* Improve their efficiency and streamline processes
+* Better manage staff scheduling
+* Predict and reduce appointment no-shows
+* Save time on administrative tasks
+* Avoid overbooking
+* Eliminate human errors (for example, misspelling a name or mistyping an appointment time)
+* Get insights into their performance (number of completed appointments and no-shows, full appointment history by patient) and compare their productivity
+**Patients are able to:**
+* Access healthcare 24/7
+* Schedule and reschedule appointments any time from anywhere
+* Communicate with their care team in real time
+* Access and pay bills (if payment functionality is offered)
