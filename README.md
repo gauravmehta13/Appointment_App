@@ -8,7 +8,9 @@
 </p>
  
  [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
- 
+ <p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" alt="Logo" width="150" height="150" />
+</p>
 <h2>Features</h2>
  
 * **Doctor profiles** — Patients should be able to browse doctor profiles to choose the doctor they like. Profiles should contain information on certifications, experience, competencies, and languages spoken. It will be useful if you include ratings and feedback from previous and current patients so users can know whether a doctor met the expectations of past patients in terms of communication, treatment, competence, etc. <br />
