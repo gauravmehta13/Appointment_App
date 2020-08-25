@@ -15,7 +15,7 @@ class UserProfile extends StatelessWidget {
           Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.fromLTRB(20, 60, 20, 10),
+                padding: const EdgeInsets.fromLTRB(15, 60, 15, 10),
                 child: Stack(children: <Widget>[
                   Card(
                     shape: RoundedRectangleBorder(
@@ -86,7 +86,7 @@ class UserProfile extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(10),
+                    padding: EdgeInsets.all(15),
                     child: Icon(
                       Icons.supervised_user_circle,
                       color: Colors.white,
@@ -95,7 +95,7 @@ class UserProfile extends StatelessWidget {
                   Align(
                     alignment: Alignment.topRight,
                     child: Padding(
-                      padding: EdgeInsets.all(10),
+                      padding: EdgeInsets.all(15),
                       child: Icon(
                         Icons.settings,
                         color: Colors.white,
@@ -105,17 +105,30 @@ class UserProfile extends StatelessWidget {
                 ]),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(20, 15, 20, 0),
+                padding: const EdgeInsets.fromLTRB(15, 15, 15, 0),
                 child: Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
                   ),
                   elevation: 50,
                   child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(15))),
+                    height: 380,
+                    width: double.infinity,
                     padding: EdgeInsets.all(10),
                     child: SingleChildScrollView(
                       child: Column(
                         children: <Widget>[
+                          ListTile(
+                            leading: Icon(
+                              Icons.person_pin,
+                              color: Color(0xFF39cef0),
+                            ),
+                            title: Text('My Doctors '),
+                            trailing: Icon(Icons.arrow_forward_ios),
+                          ),
+                          Divider(),
                           ListTile(
                             leading: Icon(
                               Icons.calendar_today,
@@ -152,14 +165,27 @@ class UserProfile extends StatelessWidget {
                             trailing: Icon(Icons.arrow_forward_ios),
                           ),
                           Divider(),
+                          ListTile(
+                            leading: Icon(
+                              Icons.watch,
+                              color: Color(0xFF39cef0),
+                            ),
+                            title: Text('Coming Soon'),
+                            trailing: Icon(Icons.arrow_forward_ios),
+                          ),
+                          Divider(),
+                          ListTile(
+                            leading: Icon(
+                              Icons.watch,
+                              color: Color(0xFF39cef0),
+                            ),
+                            title: Text('Coming Soon'),
+                            trailing: Icon(Icons.arrow_forward_ios),
+                          ),
+                          Divider(),
                         ],
                       ),
                     ),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(15))),
-                    //color: Colors.blueGrey,
-                    height: 400,
-                    width: double.infinity,
                   ),
                 ),
               ),

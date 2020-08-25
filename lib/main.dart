@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'ChikitSuck',
       //theme: ThemeData(primarySwatch: Colors.blue),
-      home: //UserProfile()
+      home: // UserProfile()
           SplashScreen(),
     );
   }
