@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class UserProfile extends StatelessWidget {
   @override
@@ -62,7 +63,7 @@ class UserProfile extends StatelessWidget {
                                 fontWeight: FontWeight.w300),
                           ),
                           SizedBox(
-                            height: 35,
+                            height: 15,
                           ),
                           FlatButton(
                             onPressed: () {},
@@ -79,7 +80,21 @@ class UserProfile extends StatelessWidget {
                                     color: Colors.white),
                               ),
                             ),
-                          )
+                          ),
+                          new LinearPercentIndicator(
+                              width: MediaQuery.of(context).size.width - 100,
+                              animation: true,
+                              lineHeight: 10.0,
+                              animationDuration: 2500,
+                              percent: 0.2,
+                              center: Text(
+                                "20.0%",
+                                style: TextStyle(
+                                    fontSize: 10, color: Colors.white),
+                              ),
+                              linearStrokeCap: LinearStrokeCap.roundAll,
+                              progressColor: Colors.white,
+                              backgroundColor: Colors.lightBlueAccent),
                         ],
                       ),
                     ),
