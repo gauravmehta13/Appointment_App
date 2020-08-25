@@ -23,6 +23,18 @@ class UserProfile extends StatelessWidget {
                     ),
                     elevation: 50,
                     child: Container(
+                      decoration: BoxDecoration(
+                          gradient: new LinearGradient(
+                            colors: [
+                              const Color(0xFF3defe7),
+                              const Color(0xFF36abfc),
+                            ],
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                          ),
+                          borderRadius: BorderRadius.all(Radius.circular(15))),
+                      height: 300,
+                      width: double.infinity,
                       padding: EdgeInsets.all(20),
                       child: Column(
                         children: <Widget>[
@@ -70,19 +82,6 @@ class UserProfile extends StatelessWidget {
                           )
                         ],
                       ),
-                      decoration: BoxDecoration(
-                          gradient: new LinearGradient(
-                            colors: [
-                              const Color(0xFF3defe7),
-                              const Color(0xFF36abfc),
-                            ],
-                            begin: Alignment.topRight,
-                            end: Alignment.bottomLeft,
-                          ),
-                          borderRadius: BorderRadius.all(Radius.circular(15))),
-                      //color: Colors.blueGrey,
-                      height: 300,
-                      width: double.infinity,
                     ),
                   ),
                   Padding(

@@ -50,9 +50,6 @@ class LookingFor extends StatelessWidget {
                       ),
                       Container(
                         width: 240,
-                        // child: Text(
-                        //  bestMovieList[index].description,
-                        //  ),
                       ),
                     ],
                   ),
