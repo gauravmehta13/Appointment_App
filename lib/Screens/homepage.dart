@@ -53,13 +53,16 @@ class _HomepageState extends State<Homepage> {
             SizedBox(
               height: 20,
             ),
-            TextField(
-                decoration: InputDecoration(
-                    fillColor: Color(0xffF6F5F4),
-                    filled: true,
-                    prefixIcon: Icon(Icons.search),
-                    border: InputBorder.none,
-                    hintText: 'Search Doctors , Clinic...')),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+              child: TextField(
+                  decoration: InputDecoration(
+                      fillColor: Color(0xffF6F5F4),
+                      filled: true,
+                      prefixIcon: Icon(Icons.search),
+                      border: InputBorder.none,
+                      hintText: 'Search Doctors , Clinic...')),
+            ),
             SizedBox(
               height: 10,
             ),
