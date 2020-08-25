@@ -56,12 +56,11 @@ class UserProfile extends StatelessWidget {
                     decoration: BoxDecoration(
                         gradient: new LinearGradient(
                           colors: [
-                            const Color(0xFF3366FF),
-                            const Color(0xFF00CCFF),
+                            const Color(0xFFFF9E80),
+                            const Color(0xFFFF3D00),
                           ],
-                          begin: const FractionalOffset(0.0, 0.0),
-                          end: const FractionalOffset(1.0, 0.0),
-                          stops: [0.0, 1.0],
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
                         ),
                         borderRadius: BorderRadius.all(Radius.circular(15))),
                     //color: Colors.blueGrey,

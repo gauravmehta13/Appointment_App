@@ -22,6 +22,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/splash.png
     - assets/chikitsuck.png
     - assets/img1.png
     - assets/img2.png
