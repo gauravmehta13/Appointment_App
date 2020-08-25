@@ -1,3 +1,4 @@
+import 'package:Appointment_App/Screens/DoctorProfile.dart';
 import 'package:Appointment_App/Screens/UserProfile.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -71,7 +72,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
                       shape: BoxShape.circle,
                       image: DecorationImage(
                           image: NetworkImage(
-                              'https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg'),
+                              'https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png'),
                           fit: BoxFit.fill)),
                 ),
               ),
@@ -91,9 +92,12 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
               ),
               Divider(),
               ListTile(
-                title: Text("First Aid"),
+                title: Text("Doctor's Profile(Test)"),
                 trailing: Icon(Icons.local_hospital),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => DoctorProfile()));
+                },
               ),
               ListTile(
                 title: Text("Item 2"),

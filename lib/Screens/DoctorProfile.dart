@@ -54,7 +54,7 @@ class _DoctorProfileState extends State<DoctorProfile> {
                               height: 60,
                             ),
                             Text(
-                              'Dr. Gaurav Yadav',
+                              'Dr. Priya Soni',
                               style: TextStyle(
                                   fontSize: 17, fontWeight: FontWeight.w500),
                             ),
