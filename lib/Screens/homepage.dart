@@ -16,7 +16,6 @@ class _HomepageState extends State<Homepage> {
   @override
   void initState() {
     super.initState();
-
     specialities = getSpeciality();
   }
 
@@ -29,7 +28,7 @@ class _HomepageState extends State<Homepage> {
         child: Column(
           children: <Widget>[
             Container(
-              height: 50,
+              height: MediaQuery.of(context).size.height * 0.1,
               width: double.infinity,
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -51,7 +50,7 @@ class _HomepageState extends State<Homepage> {
             ),*/
             ,
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * 0.02,
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
@@ -64,7 +63,7 @@ class _HomepageState extends State<Homepage> {
                       hintText: 'Search Doctors , Clinic...')),
             ),
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * 0.01,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -83,14 +82,14 @@ class _HomepageState extends State<Homepage> {
                       msg: "Coming Soon",
                       backgroundColor: Colors.blue,
                       toastLength: Toast.LENGTH_SHORT,
-                      gravity: ToastGravity.CENTER,
+                      gravity: ToastGravity.BOTTOM,
                     );
                   },
                 ),
               ],
             ),
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * 0.01,
             ),
             Container(
               height: 200,
@@ -109,7 +108,7 @@ class _HomepageState extends State<Homepage> {
                   }),
             ),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * 0.02,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -128,14 +127,14 @@ class _HomepageState extends State<Homepage> {
                       msg: "Coming Soon",
                       backgroundColor: Colors.blue,
                       toastLength: Toast.LENGTH_SHORT,
-                      gravity: ToastGravity.CENTER,
+                      gravity: ToastGravity.BOTTOM,
                     );
                   },
                 ),
               ],
             ),
             Container(
-              height: 210,
+              height: MediaQuery.of(context).size.height * 0.3,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 5,
@@ -143,7 +142,7 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * 0.02,
             ),
             Align(
               alignment: Alignment.topLeft,
@@ -156,11 +155,11 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * 0.025,
             ),
             Container(
-              height: 500,
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              height: MediaQuery.of(context).size.height * 0.5,
+              //padding: const EdgeInsets.symmetric(horizontal: 10),
               child: ListView.builder(
                 physics: NeverScrollableScrollPhysics(),
                 itemCount: 3,
