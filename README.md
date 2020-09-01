@@ -48,6 +48,10 @@
 * Communicate with their care team in real time
 * Access and pay bills (if payment functionality is offered)
 
+<h4>Presentation</h4>
+
+https://docs.google.com/presentation/d/1igqKo8uqI0QXSd_yy8VdVzOUlVHZYWbIPkPTJDNM9oc/edit#slide=id.g8331be2d02_0_57
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" img width="5000" height="5" />
 </p>
