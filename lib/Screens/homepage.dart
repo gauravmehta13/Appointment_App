@@ -63,7 +63,7 @@ class _HomepageState extends State<Homepage> {
                       hintText: 'Search Doctors , Clinic...')),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01,
+              height: 15,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -89,7 +89,7 @@ class _HomepageState extends State<Homepage> {
               ],
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01,
+              height: 7,
             ),
             Container(
               height: 200,
@@ -108,7 +108,7 @@ class _HomepageState extends State<Homepage> {
                   }),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01,
+              height: 15,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -133,16 +133,20 @@ class _HomepageState extends State<Homepage> {
                 ),
               ],
             ),
+            SizedBox(
+              height: 7,
+            ),
             Container(
-              height: MediaQuery.of(context).size.height * 0.3,
+              height: 200,
               child: ListView.builder(
+                shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 itemCount: 5,
                 itemBuilder: (ctx, i) => Hospitals(i),
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01,
+              height: 30,
             ),
             Align(
               alignment: Alignment.topLeft,
@@ -155,11 +159,10 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01,
+              height: 15,
             ),
             Container(
               height: MediaQuery.of(context).size.height * 0.5,
-              //padding: const EdgeInsets.symmetric(horizontal: 10),
               child: ListView.builder(
                 physics: NeverScrollableScrollPhysics(),
                 itemCount: 3,

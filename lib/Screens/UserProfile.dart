@@ -128,7 +128,6 @@ class UserProfile extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(15))),
-                    height: 380,
                     width: double.infinity,
                     padding: EdgeInsets.all(10),
                     child: SingleChildScrollView(
