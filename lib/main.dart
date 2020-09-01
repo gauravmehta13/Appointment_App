@@ -3,6 +3,7 @@ import 'package:Appointment_App/Screens/UserProfile.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'Screens/LoginScreen.dart';
 import 'Screens/SplashScreen.dart';
 import 'Screens/ClinicsList.dart';
 import 'Screens/doctorsList.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       //theme: ThemeData(primarySwatch: Colors.blue),
       home: // UserProfile()
           SplashScreen(),
+          //LoginScreen(),
     );
   }
 }

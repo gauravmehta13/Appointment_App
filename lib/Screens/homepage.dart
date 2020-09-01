@@ -50,7 +50,7 @@ class _HomepageState extends State<Homepage> {
             ),*/
             ,
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.02,
+              height: MediaQuery.of(context).size.height * 0.01,
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
@@ -108,7 +108,7 @@ class _HomepageState extends State<Homepage> {
                   }),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.02,
+              height: MediaQuery.of(context).size.height * 0.01,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -142,7 +142,7 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.02,
+              height: MediaQuery.of(context).size.height * 0.01,
             ),
             Align(
               alignment: Alignment.topLeft,
@@ -155,7 +155,7 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.025,
+              height: MediaQuery.of(context).size.height * 0.01,
             ),
             Container(
               height: MediaQuery.of(context).size.height * 0.5,
