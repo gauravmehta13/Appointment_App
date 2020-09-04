@@ -1,19 +1,57 @@
-//import 'package:Appointment_App/Screens/LoginScreen.dart.backup';
-import 'package:Appointment_App/Screens2/Login/login_screen.dart';
-import 'package:Appointment_App/Screens2/Signup/signup_screen.dart';
-import 'package:Appointment_App/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'Login Page.dart';
+import 'Signup Page.dart';
+import 'components.dart';
 
-import '../../../constants.dart';
-import 'background.dart';
-/*import 'package:flutter_auth/Screens/Login/login_screen.dart';
-import 'package:flutter_auth/Screens/Signup/signup_screen.dart';
-import 'package:flutter_auth/Screens/Welcome/components/background.dart';
-import 'package:flutter_auth/components/rounded_button.dart';
-import 'package:flutter_auth/constants.dart';
-import 'package:flutter_svg/svg.dart';
-*/
+class WelcomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Body(),
+    );
+  }
+}
+
+class Background extends StatelessWidget {
+  final Widget child;
+  const Background({
+    Key key,
+    @required this.child,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Container(
+      height: size.height,
+      width: double.infinity,
+      child: Stack(
+        alignment: Alignment.center,
+        children: <Widget>[
+          Positioned(
+            top: 0,
+            left: 0,
+            child: Image.asset(
+              "assets/images/main_top.png",
+              width: size.width * 0.3,
+            ),
+          ),
+          Positioned(
+            bottom: 0,
+            left: 0,
+            child: Image.asset(
+              "assets/images/main_bottom.png",
+              width: size.width * 0.2,
+            ),
+          ),
+          child,
+        ],
+      ),
+    );
+  }
+}
+
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

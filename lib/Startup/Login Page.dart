@@ -1,20 +1,17 @@
-import 'package:Appointment_App/Screens2/Signup/signup_screen.dart';
-import 'package:Appointment_App/components/already_have_an_account_acheck.dart';
-import 'package:Appointment_App/components/rounded_button.dart';
-import 'package:Appointment_App/components/rounded_input_field.dart';
-import 'package:Appointment_App/components/rounded_password_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'Signup Page.dart';
+import 'components.dart';
 
-import 'background.dart';
-/*import 'package:flutter_auth/Screens/Login/components/background.dart';
-import 'package:flutter_auth/Screens/Signup/signup_screen.dart';
-import 'package:flutter_auth/components/already_have_an_account_acheck.dart';
-import 'package:flutter_auth/components/rounded_button.dart';
-import 'package:flutter_auth/components/rounded_input_field.dart';
-import 'package:flutter_auth/components/rounded_password_field.dart';
-import 'package:flutter_svg/svg.dart';
-*/
+class LoginScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Body(),
+    );
+  }
+}
+
 class Body extends StatelessWidget {
   const Body({
     Key key,
@@ -64,6 +61,45 @@ class Body extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class Background extends StatelessWidget {
+  final Widget child;
+  const Background({
+    Key key,
+    @required this.child,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Container(
+      width: double.infinity,
+      height: size.height,
+      child: Stack(
+        alignment: Alignment.center,
+        children: <Widget>[
+          Positioned(
+            top: 0,
+            left: 0,
+            child: Image.asset(
+              "assets/images/main_top.png",
+              width: size.width * 0.35,
+            ),
+          ),
+          Positioned(
+            bottom: 0,
+            right: 0,
+            child: Image.asset(
+              "assets/images/login_bottom.png",
+              width: size.width * 0.4,
+            ),
+          ),
+          child,
+        ],
       ),
     );
   }
