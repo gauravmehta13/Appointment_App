@@ -15,6 +15,7 @@ dependencies:
   fluttertoast: ^7.0.2
   curved_navigation_bar: ^0.3.3
   percent_indicator: ^2.1.5
+  flutter_svg: ^0.17.4
   
 dev_dependencies:
   flutter_test:
@@ -28,4 +29,7 @@ flutter:
     - assets/img1.png
     - assets/img2.png
     - assets/img3.png
+    - assets/icons/
+    - assets/images/
+    - assets/
   

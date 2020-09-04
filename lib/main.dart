@@ -1,5 +1,5 @@
 import 'package:Appointment_App/Screens/DoctorProfile.dart';
-import 'package:Appointment_App/Screens/LoginScreen.dart';
+import 'package:Appointment_App/Screens/LoginScreen.dart.backup';
 import 'package:Appointment_App/Screens/UserProfile.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +8,7 @@ import 'Screens/SplashScreen.dart';
 import 'Screens/ClinicsList.dart';
 import 'Screens/doctorsList.dart';
 import 'Screens/homepage.dart';
+import 'Screens2/Welcome/welcome_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,8 +26,9 @@ class MyApp extends StatelessWidget {
         //theme: ThemeData(primarySwatch: Colors.blue),
         home: //MyBottomNavigationBar()
         // UserProfile()
-         SplashScreen(),
+         //SplashScreen(),
          //LoginScreen()
+         WelcomeScreen()
         );
   }
 }
