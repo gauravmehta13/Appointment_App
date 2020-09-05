@@ -1,5 +1,6 @@
 import 'package:Appointment_App/Screens/DoctorProfile.dart';
 import 'package:Appointment_App/Screens/UserProfile.dart';
+import 'package:Appointment_App/Startup/SplashScreen.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,12 +22,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'ChikitSuck',
-        //theme: ThemeData(primarySwatch: Colors.blue),
+        //theme: ThemeData.dark(),
         home: //MyBottomNavigationBar()
             // UserProfile()
             //SplashScreen(),
             //LoginScreen()
-            WelcomeScreen());
+            WelcomeScreen()
+    );
   }
 }
 

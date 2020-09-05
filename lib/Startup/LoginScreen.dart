@@ -1,6 +1,6 @@
+import 'package:Appointment_App/Startup/SignupScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'Signup Page.dart';
 import 'components.dart';
 
 class LoginScreen extends StatelessWidget {
