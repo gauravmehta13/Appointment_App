@@ -1,9 +1,12 @@
-import 'package:Appointment_App/Startup/LoginScreen.dart';
+//import 'package:Appointment_App/Startup/LoginScreen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'components.dart';
 
+String email, password;
 class SignUpScreen extends StatelessWidget {
+  //var authc = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,6 +56,7 @@ class Background extends StatelessWidget {
 }
 
 class Body extends StatelessWidget {
+  var authc = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -72,27 +76,34 @@ class Body extends StatelessWidget {
             ),
             RoundedInputField(
               hintText: "Your Email",
-              onChanged: (value) {},
+              onChanged: (value) {
+                email = value;
+              },
             ),
             RoundedPasswordField(
-              onChanged: (value) {},
+              onChanged: (value) {
+                password = value;
+              },
             ),
             RoundedButton(
               text: "SIGNUP",
-              press: () {},
+              press: () async {
+                try {
+                  var usersignup = await authc.createUserWithEmailAndPassword(email: email, password: password);
+                  print(usersignup);
+                  if (usersignup.additionalUserInfo.isNewUser == true){
+                        Navigator.pushNamed(context, "splashscreen");
+                      }
+                } catch(e) {
+                  print(e);
+                }
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
               login: false,
               press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return LoginScreen();
-                    },
-                  ),
-                );
+                Navigator.pushNamed(context, "loginscreen");
               },
             ),
             OrDivider(),

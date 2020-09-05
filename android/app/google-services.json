@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "757893937376",
+    "firebase_url": "https://chikitsuck-project.firebaseio.com",
+    "project_id": "chikitsuck-project",
+    "storage_bucket": "chikitsuck-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757893937376:android:dbd896a74384ffac35f885",
+        "android_client_info": {
+          "package_name": "com.example.Appointment_App"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757893937376-4ddcaq919qtff74uceuunknsj1vtpqbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMPhBiEQKQNqpzOOxtLOICZPdaEoFisJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757893937376-4ddcaq919qtff74uceuunknsj1vtpqbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

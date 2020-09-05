@@ -16,10 +16,10 @@ class _DoctorProfileState extends State<DoctorProfile> {
               Container(
                 decoration: BoxDecoration(
                     gradient: new LinearGradient(
-                      colors: [
+                      /*colors: [
                         const Color(0xFF3defe7),
                         const Color(0xFF36abfc),
-                      ],
+                      ],*/
                       begin: Alignment.topRight,
                       end: Alignment.bottomLeft,
                     ),

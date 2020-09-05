@@ -1,7 +1,11 @@
 import 'package:Appointment_App/Screens/DoctorProfile.dart';
 import 'package:Appointment_App/Screens/UserProfile.dart';
+import 'package:Appointment_App/Startup/LoginScreen.dart';
+import 'package:Appointment_App/Startup/SignupScreen.dart';
 import 'package:Appointment_App/Startup/SplashScreen.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'Screens/ClinicsList.dart';
@@ -10,6 +14,8 @@ import 'Screens/homepage.dart';
 import 'Startup/welcome_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -23,11 +29,18 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'ChikitSuck',
         //theme: ThemeData.dark(),
-        home: //MyBottomNavigationBar()
+        initialRoute: "/",
+        routes: {
+          "/": (context) => WelcomeScreen(),
+          "loginscreen": (context) => LoginScreen(),
+          "signupscreen": (context) => SignUpScreen(),
+          "splashscreen": (context) => SplashScreen(),
+        },
+        /*home: //MyBottomNavigationBar()
             // UserProfile()
             //SplashScreen(),
             //LoginScreen()
-            WelcomeScreen()
+            WelcomeScreen()*/
     );
   }
 }
@@ -52,6 +65,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
 
   @override
   Widget build(BuildContext context) {
+    var authc = FirebaseAuth.instance;
     return new Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
@@ -59,7 +73,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
           brightness: Brightness.light,
           iconTheme: IconThemeData(color: Colors.black87),
         ),
-        drawer: Drawer(
+        drawer: Drawer(          
           child: Column(
             children: <Widget>[
               FlatButton(
@@ -104,10 +118,15 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
                 },
               ),
               ListTile(
-                title: Text("Item 2"),
-                trailing: Icon(Icons.local_hospital),
-                onTap: () {},
+                title: Text("Logout"),
+                trailing: Icon(Icons.logout),
+                onTap: () async {
+                  print('sign out');
+                  await authc.signOut();
+                  Navigator.pushNamedAndRemoveUntil(context, "/", (route) => false);
+                },
               ),
+
             ],
           ),
         ),

@@ -1,4 +1,5 @@
-import 'package:Appointment_App/Startup/SignupScreen.dart';
+//import 'package:Appointment_App/Startup/SignupScreen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'components.dart';
@@ -11,11 +12,12 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-
+String email, password;
 class Body extends StatelessWidget {
-  const Body({
+  /*const Body({
     Key key,
-  }) : super(key: key);
+  }) : super(key: key);*/
+  var authc = FirebaseAuth.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -37,26 +39,33 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.03),
             RoundedInputField(
               hintText: "Your Email",
-              onChanged: (value) {},
+              onChanged: (value) {
+                email = value;
+              },
             ),
             RoundedPasswordField(
-              onChanged: (value) {},
+              onChanged: (value) {
+                password = value;
+              },
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () async {
+                try {
+                  var userlogin = await authc.signInWithEmailAndPassword(email: email, password: password);
+                  print(userlogin);
+                  if(userlogin != null) {
+                        Navigator.pushNamed(context, "splashscreen");   
+                      } 
+                } catch(e) {
+                  print(e);
+                }
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
               press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return SignUpScreen();
-                    },
-                  ),
-                );
+                Navigator.pushNamed(context, "signupscreen");
               },
             ),
           ],
