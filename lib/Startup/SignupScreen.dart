@@ -1,4 +1,3 @@
-//import 'package:Appointment_App/Startup/LoginScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -6,6 +5,7 @@ import 'components.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 String email, password;
+
 class SignUpScreen extends StatelessWidget {
   //var authc = FirebaseAuth.instance;
   @override
@@ -55,11 +55,13 @@ class Background extends StatelessWidget {
     );
   }
 }
+
 final GoogleSignIn googleSignIn = GoogleSignIn();
 
+// ignore: must_be_immutable
 class Body extends StatelessWidget {
   var authc = FirebaseAuth.instance;
-  
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -92,12 +94,13 @@ class Body extends StatelessWidget {
               text: "SIGNUP",
               press: () async {
                 try {
-                  var usersignup = await authc.createUserWithEmailAndPassword(email: email, password: password);
+                  var usersignup = await authc.createUserWithEmailAndPassword(
+                      email: email, password: password);
                   print(usersignup);
-                  if (usersignup.additionalUserInfo.isNewUser == true){
-                        Navigator.pushNamed(context, "splashscreen");
-                      }
-                } catch(e) {
+                  if (usersignup.additionalUserInfo.isNewUser == true) {
+                    Navigator.pushNamed(context, "splashscreen");
+                  }
+                } catch (e) {
                   print(e);
                 }
               },
@@ -113,26 +116,27 @@ class Body extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SocalIcon(
+                /* SocalIcon(
                   iconSrc: "assets/icons/facebook.svg",
                   press: () {},
                 ),
                 SocalIcon(
                   iconSrc: "assets/icons/twitter.svg",
                   press: () {},
-                ),
+                ),*/
                 SocalIcon(
                   iconSrc: "assets/icons/google-plus.svg",
                   press: () async {
                     try {
-                    var gauth = await googleSignIn.signIn();
-                    //var ggauth = gauth.authentication;
-                    print(gauth);
-                    //print(ggauth);
-                    if (gauth.id != null){
-                      Navigator.pushNamedAndRemoveUntil(context, "splashcreen", (route) => false);
-                    }
-                    } catch(e) {
+                      var gauth = await googleSignIn.signIn();
+                      //var ggauth = gauth.authentication;
+                      print(gauth);
+                      //print(ggauth);
+                      if (gauth.id != null) {
+                        Navigator.pushNamedAndRemoveUntil(
+                            context, "splashscreen", (route) => false);
+                      }
+                    } catch (e) {
                       print(e);
                     }
                   },

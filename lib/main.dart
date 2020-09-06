@@ -21,27 +21,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.WhRapid
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle(statusBarColor: Colors.transparent));
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'ChikitSuck',
-        //theme: ThemeData.dark(),
-        initialRoute: "/",
-        routes: {
-          "/": (context) => WelcomeScreen(),
-          "loginscreen": (context) => LoginScreen(),
-          "signupscreen": (context) => SignUpScreen(),
-          "splashscreen": (context) => SplashScreen(),
-        },
-        /*home: //MyBottomNavigationBar()
-            // UserProfile()
-            //SplashScreen(),
-            //LoginScreen()
-            WelcomeScreen()*/
+      debugShowCheckedModeBanner: false,
+      title: 'ChikitSuck',
+      initialRoute: "/",
+      routes: {
+        "/": (context) => WelcomeScreen(),
+        "navbar": (context) => MyBottomNavigationBar(),
+        "home": (context) => Homepage(),
+        "loginscreen": (context) => LoginScreen(),
+        "signupscreen": (context) => SignUpScreen(),
+        "splashscreen": (context) => SplashScreen(),
+      },
     );
   }
 }
@@ -75,7 +70,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
           brightness: Brightness.light,
           iconTheme: IconThemeData(color: Colors.black87),
         ),
-        drawer: Drawer(          
+        drawer: Drawer(
           child: Column(
             children: <Widget>[
               FlatButton(
@@ -126,10 +121,10 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
                   print('sign out');
                   await authc.signOut();
                   await googleSignIn.signOut();
-                  Navigator.pushNamedAndRemoveUntil(context, "/", (route) => false);
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, "/", (route) => false);
                 },
               ),
-
             ],
           ),
         ),

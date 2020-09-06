@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "757893937376-90k6b0djlofn4fvi1ul1ul7v5foltso8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.Appointment_App",
+            "certificate_hash": "b0315a6a320ab02700bb66e4377aea5200e69127"
+          }
+        },
+        {
           "client_id": "757893937376-4ddcaq919qtff74uceuunknsj1vtpqbc.apps.googleusercontent.com",
           "client_type": 3
         }

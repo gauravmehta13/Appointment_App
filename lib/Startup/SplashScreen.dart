@@ -1,8 +1,5 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-
-import '../main.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -14,9 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 3), () {
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => MyBottomNavigationBar(),
-      ));
+      Navigator.pushReplacementNamed(context, 'navbar');
     });
   }
 

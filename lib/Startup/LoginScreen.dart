@@ -2,6 +2,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'SignupScreen.dart';
 import 'components.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -12,7 +13,9 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
+
 String email, password;
+
 class Body extends StatelessWidget {
   /*const Body({
     Key key,
@@ -52,12 +55,13 @@ class Body extends StatelessWidget {
               text: "LOGIN",
               press: () async {
                 try {
-                  var userlogin = await authc.signInWithEmailAndPassword(email: email, password: password);
+                  var userlogin = await authc.signInWithEmailAndPassword(
+                      email: email, password: password);
                   print(userlogin);
-                  if(userlogin != null) {
-                        Navigator.pushReplacementNamed(context, "splashscreen");    
-                      } 
-                } catch(e) {
+                  if (userlogin != null) {
+                    Navigator.pushReplacementNamed(context, "splashscreen");
+                  }
+                } catch (e) {
                   print(e);
                 }
               },
@@ -68,6 +72,35 @@ class Body extends StatelessWidget {
                 Navigator.pushNamed(context, "signupscreen");
               },
             ),
+            OrDivider(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                /* SocalIcon(
+                  iconSrc: "assets/icons/facebook.svg",
+                  press: () {},
+                ),
+                SocalIcon(
+                  iconSrc: "assets/icons/twitter.svg",
+                  press: () {},
+                ),*/
+                SocalIcon(
+                  iconSrc: "assets/icons/google-plus.svg",
+                  press: () async {
+                    try {
+                      var gauth = await googleSignIn.signIn();
+                      print(gauth);
+                      if (gauth.id != null) {
+                        Navigator.pushNamedAndRemoveUntil(
+                            context, "splashscreen", (route) => false);
+                      }
+                    } catch (e) {
+                      print(e);
+                    }
+                  },
+                ),
+              ],
+            )
           ],
         ),
       ),
