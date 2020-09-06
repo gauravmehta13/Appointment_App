@@ -55,7 +55,7 @@ class Body extends StatelessWidget {
                   var userlogin = await authc.signInWithEmailAndPassword(email: email, password: password);
                   print(userlogin);
                   if(userlogin != null) {
-                        Navigator.pushNamed(context, "splashscreen");   
+                        Navigator.pushReplacementNamed(context, "splashscreen");    
                       } 
                 } catch(e) {
                   print(e);

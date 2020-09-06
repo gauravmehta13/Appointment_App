@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'components.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 String email, password;
 class SignUpScreen extends StatelessWidget {
@@ -54,9 +55,11 @@ class Background extends StatelessWidget {
     );
   }
 }
+final GoogleSignIn googleSignIn = GoogleSignIn();
 
 class Body extends StatelessWidget {
   var authc = FirebaseAuth.instance;
+  
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -120,7 +123,19 @@ class Body extends StatelessWidget {
                 ),
                 SocalIcon(
                   iconSrc: "assets/icons/google-plus.svg",
-                  press: () {},
+                  press: () async {
+                    try {
+                    var gauth = await googleSignIn.signIn();
+                    //var ggauth = gauth.authentication;
+                    print(gauth);
+                    //print(ggauth);
+                    if (gauth.id != null){
+                      Navigator.pushNamedAndRemoveUntil(context, "splashcreen", (route) => false);
+                    }
+                    } catch(e) {
+                      print(e);
+                    }
+                  },
                 ),
               ],
             )

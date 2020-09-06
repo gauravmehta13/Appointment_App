@@ -8,6 +8,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'Screens/ClinicsList.dart';
 import 'Screens/doctorsList.dart';
 import 'Screens/homepage.dart';
@@ -66,6 +67,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     var authc = FirebaseAuth.instance;
+    var googleSignIn = GoogleSignIn();
     return new Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
@@ -123,6 +125,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
                 onTap: () async {
                   print('sign out');
                   await authc.signOut();
+                  await googleSignIn.signOut();
                   Navigator.pushNamedAndRemoveUntil(context, "/", (route) => false);
                 },
               ),
