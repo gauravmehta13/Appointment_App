@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ChikitSuck',
-      initialRoute: "chatbot",
+      initialRoute: "/",
       routes: {
         "/": (context) => WelcomeScreen(),
         "chatbot": (context) => ChatMessages(),
