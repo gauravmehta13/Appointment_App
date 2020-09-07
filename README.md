@@ -53,16 +53,10 @@
 <p align="center">
   <a href="https://docs.google.com/presentation/d/1igqKo8uqI0QXSd_yy8VdVzOUlVHZYWbIPkPTJDNM9oc/edit#slide=id.g8331be2d02_0_57">
          <img alt="Qries" src="https://i2.wp.com/mac-torrent-download.net/wp-content/uploads/2019/10/Microsoft-Powerpoint-2019-icon.png"
-              img width="50" height="50" >
+              img width="60" height="60" alt="Presentation" >
       </a></p>
       <p align="center">
-<a href="https://docs.google.com/presentation/d/1igqKo8uqI0QXSd_yy8VdVzOUlVHZYWbIPkPTJDNM9oc/edit#slide=id.g8331be2d02_0_57" class="MyLink"><img src="https://i2.wp.com/mac-torrent-download.net/wp-content/uploads/2019/10/Microsoft-Powerpoint-2019-icon.png" img width="50" height="50" /><span class="MyLinkText">Presentation</span></a>
-  
-  
-<div class="img-with-text"><a href="https://docs.google.com/presentation/d/1igqKo8uqI0QXSd_yy8VdVzOUlVHZYWbIPkPTJDNM9oc/edit#slide=id.g8331be2d02_0_57">
-    <img src="https://i2.wp.com/mac-torrent-download.net/wp-content/uploads/2019/10/Microsoft-Powerpoint-2019-icon.png" alt="Presentation" />
-    <p>Some text</p>
-</div>
+
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" img width="5000" height="5" />
