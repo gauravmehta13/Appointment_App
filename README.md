@@ -56,7 +56,7 @@
               img width="50" height="50" >
       </a></p>
       <p align="center">
-
+<a href="#" class="MyLink"><img src="./yourImageIcon.png" /><span class="MyLinkText">SIGN IN</span></a>
 
 
 <p align="center">
