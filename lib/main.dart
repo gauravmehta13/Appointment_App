@@ -1,3 +1,4 @@
+import 'package:Appointment_App/Screens/ChatBot.dart';
 import 'package:Appointment_App/Screens/DoctorProfile.dart';
 import 'package:Appointment_App/Screens/UserProfile.dart';
 import 'package:Appointment_App/Startup/LoginScreen.dart';
@@ -28,9 +29,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ChikitSuck',
-      initialRoute: "/",
+      initialRoute: "chatbot",
       routes: {
         "/": (context) => WelcomeScreen(),
+        "chatbot": (context) => ChatMessages(),
         "navbar": (context) => MyBottomNavigationBar(),
         "home": (context) => Homepage(),
         "loginscreen": (context) => LoginScreen(),
