@@ -41,3 +41,23 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/
+    - assets/firstaid/body.jpg
+    - assets/firstaid/abdominal.jpg
+    - assets/firstaid/back.jpg
+    - assets/firstaid/chest.jpg
+    - assets/firstaid/face.jpg
+    - assets/firstaid/hand.jpg
+    - assets/firstaid/head.jpg
+    - assets/firstaid/hip.jpg
+    - assets/firstaid/leg.jpg
+    - assets/firstaid/pelvis.jpg
+    - assets/firstaid/scapula.jpg
+    - assets/firstaid/burn.jpg
+    - assets/firstaid/cut.jpg
+    - assets/firstaid/abrasion.jpg
+    - assets/firstaid/bite.jpg
+    - assets/firstaid/splinters.jpg
+    - assets/firstaid/sprain.jpg
+    - assets/firstaid/strain.jpg
+
+
